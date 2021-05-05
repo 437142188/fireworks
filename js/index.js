@@ -24,9 +24,10 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('|#countdown 3||某|某|祝|你|生|日|快|乐|#rectangle|');
+      S.UI.simulate('|#countdown 3|我|们|三|周|年|啦|一|首|带|你|去|旅|行|送|给|你|');
     }
-
+	
+	
     S.Drawing.loop(function () {
       S.Shape.render();
     });
@@ -715,3 +716,4 @@ S.Shape = (function () {
 
 
 S.init();
+
